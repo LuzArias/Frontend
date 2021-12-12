@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base routerLink="/">
+  <title>Alema App Medicamentos</title>
+</head>
+
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">Alema Apps - Dispositivos Médicos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Administracion
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item"
+                    routerLink="/app/modulos/administracion/personas/crearperson/crearperson-component"
+                    routerLinkActive="active">Crear
+                    Personas</a></li>
+                <li><a class="dropdown-item"
+                    routerLink="/app/modulos/administracion/personas/buscarperson/buscarperson-component"
+                    routerLinkActive="active">Buscar
+                    Personas</a></li>
+                <li><a class="dropdown-item"
+                    routerLink="/app/modulos/administracion/personas/editarperson/editarperson-component"
+                    routerLinkActive="active">Editar
+                    personas</a></li>
+                <li><a class="dropdown-item"
+                    routerLink="/app/modulos/administracion/personas/eliminarperson/eliminarperson-component"
+                    routerLinkActive="active">Eliminar
+                    personas</a></li>
+              </ul>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="/app/modulos/seguridad" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Seguridad
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="/app/modulos/seguridad/identificacion/identificacion"
+                    routerLinkActive="active">Identificacion</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/seguridad/cambioclave/cambioclave"
+                    routerLinkActive="active">Cambio de clave</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/seguridad/recuperarclave/recuperarclave"
+                    routerLinkActive="active">Recuperar clave</a></li>
+              </ul>
+<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="/app/modulos/administracion/productos/productos"
+                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                routerLinkActive="active">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="/app/modulos/administracion/productos/crearproducto"
+                    routerLinkActive="active">Crear Producto</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/administracion/productos/buscarproducto"
+                    routerLinkActive="active">Buscar Producto</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/administracion/productos/editarproducto"
+                    routerLinkActive="active">Editar producto</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/administracion/productos/eliminarproducto"
+                    routerLinkActive="active">Eliminar producto</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="/app/modulos/pedidos/Pedidos" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pedidos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="/app/modulos/pedidos/realizarpedido/realizarpedido"
+                    routerLinkActive="active">Crear Pedido</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/pedidos/buscarpedido/buscarpedido"
+                    routerLinkActive="active">Buscar Pedido</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/pedidos/editarpedido/editarpedido"
+                    routerLinkActive="active">Editar Pedido</a></li>
+                <li><a class="dropdown-item" routerLink="/app/modulos/pedidos/eliminarpedido/eliminarpedido"
+                    routerLinkActive="active">Eliminar Pedido</a></li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-5">
+          <label for="txtNombre" class="form-label">Nombres</label>
+          <input type="text" class="form-control" id="txtNombre" required>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-5">
+          <label for="txtNombre" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="txtApellido" required>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-5">
+          <label for="txtNombre" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="txtDireccion" required>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-5">
+          <label for="txtcorreo" class="form-label">Correo Electronico</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="email" class="form-control" id="txtcorreo" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Ingrese un correo valido
+            </div>
+          </div>
+        </div>
+<div class="container">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-5">
+              <label for="txtcelular" class="form-label">Celular</label>
+              <input type="text" class="form-control" id="txtcelular" required>
+              <div class="invalid-feedback">
+                Campo requerido.
+              </div>
+            </div>
+
+
+            <br>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Registrarse</button>
+            </div>
+          </form>
+        </div>
+    </div>
+    <script type="text/JavaScript" src="funciones/funciones.js"> </script>
+
+  <app-root></app-root>
+</body>
+
+</html>
